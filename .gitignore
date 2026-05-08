@@ -1,37 +1,24 @@
-```
 # Dependencies
 node_modules/
 
-# Build artifacts
+# Build outputs
 dist/
 build/
-*.min.js
-*.min.css
-*.bundle.js
+target/
 
 # Environment variables
 .env
 .env.local
 *.env.*
 
-# Editor/IDE files
+# IDE specific
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
 # Logs
 *.log
-
-# Coverage reports
-coverage/
-htmlcov/
-*.coverage
-
-# OS generated files
-.DS_Store
-Thumbs.db
 
 # Python specific
 __pycache__/
@@ -39,12 +26,46 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-selfcheck.json
-.pytest_cache/
-.mypy_cache/
+*.so
+*.egg-info/
+.eggs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Testing
 .coverage
-```
+htmlcov/
+.coverage.*
+.nyc_output/
+coverage/
+
+# Package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Documentation
+docs/_build/
+
+# Distribution / packaging
+*.tar.gz
+*.whl
+
+# Sensitive files
+config/secrets.yml
+credentials.json
+
+# Quasar specific
+.cypress/
+dist/
+node_modules/
+package-lock.json
+yarn.lock
+quasar.testing.*
