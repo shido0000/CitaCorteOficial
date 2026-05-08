@@ -1,0 +1,539 @@
+/**
+ * CitaCorte - Variables Globales de Estilo
+ * Archivo centralizado para colores y tipografía del sistema
+ * 
+ * Este archivo define las variables CSS personalizadas (custom properties)
+ * para garantizar homogeneidad visual en toda la aplicación.
+ */
+
+:root {
+    /* ========================================
+       COLORES PRINCIPALES
+       ======================================== */
+    --color-dorado: #D4AF37;
+    --color-negro: #0D0D0D;
+    --color-blanco: #FFFFFF;
+    --color-gris-oscuro: #333333;
+
+    /* ========================================
+       COLORES SECUNDARIOS
+       ======================================== */
+    --color-azul-oscuro: #1E2A37;
+    --color-gris-medio: #6B7280;
+    --color-beige: #F0E6D2;
+    --color-beige-claro: #FAF7F2;
+    --color-cafe: #5A3E2B;
+
+    /* ========================================
+       TIPOGRAFÍA
+       ======================================== */
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-family-secondary: 'Poppins', sans-serif;
+
+    /* Pesos de fuente */
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Tamaños de fuente */
+    --font-size-xs: 0.75rem;    /* 12px */
+    --font-size-sm: 0.875rem;   /* 14px */
+    --font-size-md: 1rem;       /* 16px */
+    --font-size-lg: 1.25rem;    /* 20px */
+    --font-size-xl: 1.5rem;     /* 24px */
+    --font-size-2xl: 2rem;      /* 32px */
+    --font-size-3xl: 2.5rem;    /* 40px */
+
+    /* ========================================
+       ESPACIADO
+       ======================================== */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+
+    /* ========================================
+       BORDES
+       ======================================== */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    --border-radius-full: 9999px;
+
+    /* ========================================
+       SOMBRAS
+       ======================================== */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+    --shadow-golden: 0 8px 16px rgba(212, 175, 55, 0.15);
+
+    /* ========================================
+       TRANSICIONES
+       ======================================== */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ========================================
+   ESTILOS GLOBALES
+   ======================================== */
+
+html {
+    font-family: var(--font-family-primary);
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-sm);
+    line-height: 1.5715;
+    font-weight: var(--font-weight-regular);
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   TIPOGRAFÍA
+   ======================================== */
+
+h1 {
+    font-size: var(--font-size-2xl);
+    line-height: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    margin: 0;
+    color: inherit;
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+    line-height: 2rem;
+    font-weight: var(--font-weight-semibold);
+    margin: 0;
+    color: inherit;
+}
+
+h3 {
+    font-size: var(--font-size-lg);
+    line-height: 1.75rem;
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+    color: inherit;
+}
+
+h4 {
+    font-size: var(--font-size-md);
+    line-height: 1.5rem;
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+    color: inherit;
+}
+
+p {
+    margin: 0;
+    font-weight: var(--font-weight-regular);
+}
+
+small {
+    font-size: var(--font-size-xs);
+    line-height: 1.125rem;
+    font-weight: var(--font-weight-regular);
+}
+
+/* ========================================
+   CLASES DE UTILIDAD - COLORES
+   ======================================== */
+
+.text-dorado {
+    color: var(--color-dorado) !important;
+}
+
+.text-negro {
+    color: var(--color-negro) !important;
+}
+
+.text-blanco {
+    color: var(--color-blanco) !important;
+}
+
+.text-gris-oscuro {
+    color: var(--color-gris-oscuro) !important;
+}
+
+.text-azul-oscuro {
+    color: var(--color-azul-oscuro) !important;
+}
+
+.text-gris-medio {
+    color: var(--color-gris-medio) !important;
+}
+
+.text-beige {
+    color: var(--color-beige) !important;
+}
+
+.text-beige-claro {
+    color: var(--color-beige-claro) !important;
+}
+
+.text-cafe {
+    color: var(--color-cafe) !important;
+}
+
+/* Background colors */
+.bg-dorado {
+    background-color: var(--color-dorado) !important;
+}
+
+.bg-negro {
+    background-color: var(--color-negro) !important;
+}
+
+.bg-blanco {
+    background-color: var(--color-blanco) !important;
+}
+
+.bg-gris-oscuro {
+    background-color: var(--color-gris-oscuro) !important;
+}
+
+.bg-azul-oscuro {
+    background-color: var(--color-azul-oscuro) !important;
+}
+
+.bg-gris-medio {
+    background-color: var(--color-gris-medio) !important;
+}
+
+.bg-beige {
+    background-color: var(--color-beige) !important;
+}
+
+.bg-beige-claro {
+    background-color: var(--color-beige-claro) !important;
+}
+
+.bg-cafe {
+    background-color: var(--color-cafe) !important;
+}
+
+/* ========================================
+   CLASES DE UTILIDAD - TIPOGRAFÍA
+   ======================================== */
+
+.font-light {
+    font-weight: var(--font-weight-light);
+}
+
+.font-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.font-medium {
+    font-weight: var(--font-weight-medium);
+}
+
+.font-semibold {
+    font-weight: var(--font-weight-semibold);
+}
+
+.font-bold {
+    font-weight: var(--font-weight-bold);
+}
+
+.text-xs {
+    font-size: var(--font-size-xs);
+}
+
+.text-sm {
+    font-size: var(--font-size-sm);
+}
+
+.text-md {
+    font-size: var(--font-size-md);
+}
+
+.text-lg {
+    font-size: var(--font-size-lg);
+}
+
+.text-xl {
+    font-size: var(--font-size-xl);
+}
+
+.text-2xl {
+    font-size: var(--font-size-2xl);
+}
+
+.text-3xl {
+    font-size: var(--font-size-3xl);
+}
+
+/* ========================================
+   CLASES DE UTILIDAD - ESPACIADO
+   ======================================== */
+
+.m-xs { margin: var(--spacing-xs); }
+.m-sm { margin: var(--spacing-sm); }
+.m-md { margin: var(--spacing-md); }
+.m-lg { margin: var(--spacing-lg); }
+.m-xl { margin: var(--spacing-xl); }
+.m-xxl { margin: var(--spacing-xxl); }
+
+.mt-xs { margin-top: var(--spacing-xs); }
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+.mt-xxl { margin-top: var(--spacing-xxl); }
+
+.mb-xs { margin-bottom: var(--spacing-xs); }
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+.mb-xxl { margin-bottom: var(--spacing-xxl); }
+
+.p-xs { padding: var(--spacing-xs); }
+.p-sm { padding: var(--spacing-sm); }
+.p-md { padding: var(--spacing-md); }
+.p-lg { padding: var(--spacing-lg); }
+.p-xl { padding: var(--spacing-xl); }
+.p-xxl { padding: var(--spacing-xxl); }
+
+.pt-xs { padding-top: var(--spacing-xs); }
+.pt-sm { padding-top: var(--spacing-sm); }
+.pt-md { padding-top: var(--spacing-md); }
+.pt-lg { padding-top: var(--spacing-lg); }
+.pt-xl { padding-top: var(--spacing-xl); }
+.pt-xxl { padding-top: var(--spacing-xxl); }
+
+.pb-xs { padding-bottom: var(--spacing-xs); }
+.pb-sm { padding-bottom: var(--spacing-sm); }
+.pb-md { padding-bottom: var(--spacing-md); }
+.pb-lg { padding-bottom: var(--spacing-lg); }
+.pb-xl { padding-bottom: var(--spacing-xl); }
+.pb-xxl { padding-bottom: var(--spacing-xxl); }
+
+/* ========================================
+   CLASES DE UTILIDAD - BORDES
+   ======================================== */
+
+.rounded-sm {
+    border-radius: var(--border-radius-sm);
+}
+
+.rounded-md {
+    border-radius: var(--border-radius-md);
+}
+
+.rounded-lg {
+    border-radius: var(--border-radius-lg);
+}
+
+.rounded-xl {
+    border-radius: var(--border-radius-xl);
+}
+
+.rounded-full {
+    border-radius: var(--border-radius-full);
+}
+
+/* ========================================
+   CLASES DE UTILIDAD - SOMBRAS
+   ======================================== */
+
+.shadow-sm {
+    box-shadow: var(--shadow-sm);
+}
+
+.shadow-md {
+    box-shadow: var(--shadow-md);
+}
+
+.shadow-lg {
+    box-shadow: var(--shadow-lg);
+}
+
+.shadow-xl {
+    box-shadow: var(--shadow-xl);
+}
+
+.shadow-golden {
+    box-shadow: var(--shadow-golden);
+}
+
+/* ========================================
+   COMPONENTES ESTILIZADOS
+   ======================================== */
+
+/* Botón Primario (Dorado) */
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--color-dorado);
+    color: var(--color-negro);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #C4A030;
+    box-shadow: var(--shadow-golden);
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* Botón Secundario (Outline Dorado) */
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: transparent;
+    color: var(--color-dorado);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-sm);
+    border: 2px solid var(--color-dorado);
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(212, 175, 55, 0.08);
+    border-color: #C4A030;
+    color: #C4A030;
+}
+
+/* Tarjeta Premium */
+.card-premium {
+    background-color: var(--color-blanco);
+    border-radius: var(--border-radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    border: 1px solid #E5E5E5;
+    transition: all var(--transition-base);
+}
+
+.card-premium:hover {
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+    border-color: var(--color-dorado);
+}
+
+/* Input Estilizado */
+.input-premium {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-sm);
+    border: 2px solid #E5E5E5;
+    border-radius: var(--border-radius-md);
+    outline: none;
+    transition: all var(--transition-base);
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+}
+
+.input-premium:focus {
+    border-color: var(--color-dorado);
+    box-shadow: inset 0 -2px 0 var(--color-dorado);
+}
+
+.input-premium::placeholder {
+    color: var(--color-gris-medio);
+}
+
+/* Badge/Etiqueta */
+.badge-premium {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--color-dorado);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: 11px;
+    border-radius: var(--border-radius-full);
+}
+
+/* ========================================
+   MODO OSCURO
+   ======================================== */
+
+body.dark {
+    background-color: #1a1a1a;
+    color: var(--color-blanco);
+}
+
+body.dark .card-premium {
+    background-color: #2d2d2d;
+    border-color: #404040;
+}
+
+body.dark .input-premium {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    color: var(--color-blanco);
+}
+
+body.dark .btn-secondary {
+    color: var(--color-dorado);
+    border-color: var(--color-dorado);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1024px) {
+    :root {
+        --font-size-3xl: 2rem;
+        --font-size-2xl: 1.75rem;
+        --font-size-xl: 1.375rem;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --font-size-3xl: 1.75rem;
+        --font-size-2xl: 1.5rem;
+        --font-size-xl: 1.25rem;
+        --spacing-lg: 20px;
+        --spacing-xl: 28px;
+    }
+
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+}

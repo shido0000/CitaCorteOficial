@@ -28,7 +28,7 @@ module.exports = configure(function (/* ctx */) {
 
         // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
         css: [
-            "assets/theme/citacorte-variables.css",
+            "theme/citacorte-variables.css",
             "app.scss"
         ],
 
