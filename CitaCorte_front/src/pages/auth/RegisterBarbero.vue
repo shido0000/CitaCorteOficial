@@ -107,4 +107,63 @@ const registrar = async () => {
         background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
     }
 }
+
+:deep(.q-card) {
+    background: $color-blanco;
+    border-radius: $border-radius-xl;
+    box-shadow: $shadow-lg;
+    border: 1px solid rgba($color-dorado, 0.1);
+
+    .dark & {
+        background: #2D2D2D;
+        border-color: #404040;
+    }
+}
+
+.text-h6 {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-bold;
+    color: $color-negro;
+    margin-bottom: $spacing-xs;
+
+    .dark & {
+        color: $color-blanco;
+    }
+}
+
+.text-caption {
+    color: $color-gris-medio;
+}
+
+.text-subtitle2 {
+    color: $color-negro;
+    font-weight: $font-weight-semibold;
+
+    .dark & {
+        color: $color-blanco;
+    }
+}
+
+:deep(.q-input) {
+    :deep(.q-field__control) {
+        border-radius: $border-radius-md;
+    }
+
+    :deep(.q-field__label) {
+        font-family: $font-family-primary;
+    }
+
+    :deep(.q-field--focused) {
+        :deep(.q-field__control) {
+            border-color: $color-dorado;
+        }
+    }
+}
+
+:deep(.q-btn) {
+    border-radius: $border-radius-md;
+    text-transform: none;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 0.5px;
+}
 </style>
