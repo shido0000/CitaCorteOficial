@@ -1,0 +1,184 @@
+// Quasar SCSS (& Sass) Variables
+// CitaCorte Design System Integration
+// --------------------------------------------------
+
+// Import design system
+@import "src/assets/theme/citacorte-design-system.scss";
+
+// ========================================
+// QUASAR THEME CONFIGURATION
+// ========================================
+
+// Primary, secondary, accent colors
+$primary: $color-dorado;
+$secondary: $color-azul-oscuro;
+$accent: $color-cafe;
+
+// Dark mode colors
+$dark: #1a1a1a;
+$dark-page: #2d2d2d;
+
+// Status colors
+$positive: #43a047;
+$negative: #e53935;
+$info: #1976d2;
+$warning: #fb8c00;
+
+// Font family
+$body-font-family: $font-family-primary;
+
+// ========================================
+// LIGHT MODE CUSTOMIZATION
+// ========================================
+
+// Light mode variables
+$light-bg: $color-blanco;
+$light-text: $color-negro;
+
+// ========================================
+// DARK MODE CUSTOMIZATION
+// ========================================
+
+// Dark mode variables
+$dark-bg: #1a1a1a;
+$dark-text: $color-blanco;
+
+// ========================================
+// CUSTOM VARIABLES
+// ========================================
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-xxl: 48px;
+
+// Border radius
+$generic-border-radius: 8px;
+
+// Font sizes
+$text-h1: $h1-font-size;
+$text-h2: $h2-font-size;
+$text-h3: $h3-font-size;
+$text-h4: $h4-font-size;
+$text-body1: $body-font-size;
+$text-body2: $small-font-size;
+
+// Font weights
+$text-weight-light: $font-weight-light;
+$text-weight-regular: $font-weight-regular;
+$text-weight-medium: $font-weight-medium;
+$text-weight-bold: $font-weight-bold;
+
+// Shadows
+$shadow-1: $shadow-sm;
+$shadow-2: $shadow-md;
+$shadow-3: $shadow-lg;
+$shadow-4: $shadow-xl;
+$shadow-up-1: 0 -1px 3px rgba(0, 0, 0, 0.1);
+$shadow-up-2: 0 -4px 6px rgba(0, 0, 0, 0.1);
+$shadow-up-3: 0 -10px 15px rgba(0, 0, 0, 0.1);
+$shadow-up-4: 0 -20px 25px rgba(0, 0, 0, 0.1);
+
+// ========================================
+// QUASAR BUTTON OVERRIDES
+// ========================================
+
+// Button styling
+$button-min-width: 64px;
+$button-padding: 10px 16px;
+$button-border-radius: $border-radius-md;
+$button-transition: all $transition-base;
+
+// ========================================
+// QUASAR CARD OVERRIDES
+// ========================================
+
+$card-border-radius: $border-radius-lg;
+$card-box-shadow: $shadow-md;
+$card-padding: $spacing-lg;
+
+// ========================================
+// QUASAR TABLE OVERRIDES
+// ========================================
+
+$table-border-color: #e0e0e0;
+$table-row-hover-background: rgba($color-dorado, 0.05);
+
+// ========================================
+// QUASAR INPUT OVERRIDES
+// ========================================
+
+$input-border-radius: $border-radius-md;
+$input-padding: 12px 16px;
+$input-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+$input-focus-shadow: 0 0 0 3px rgba($color-dorado, 0.1);
+
+// ========================================
+// QUASAR DIALOG OVERRIDES
+// ========================================
+
+$dialog-border-radius: $border-radius-lg;
+$dialog-box-shadow: $shadow-2xl;
+
+// ========================================
+// QUASAR DRAWER OVERRIDES
+// ========================================
+
+$drawer-border-radius: 0;
+$drawer-width: 280px;
+$drawer-mini-width: 80px;
+
+// ========================================
+// QUASAR HEADER/FOOTER OVERRIDES
+// ========================================
+
+$header-background: $color-blanco;
+$header-text-color: $color-negro;
+$header-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+// ========================================
+// QUASAR MENU OVERRIDES
+// ========================================
+
+$menu-border-radius: $border-radius-md;
+$menu-box-shadow: $shadow-lg;
+$menu-min-width: 200px;
+
+// ========================================
+// QUASAR CHIP OVERRIDES
+// ========================================
+
+$chip-border-radius: $border-radius-full;
+$chip-min-height: 32px;
+$chip-padding: 4px 12px;
+
+// ========================================
+// QUASAR TAB OVERRIDES
+// ========================================
+
+$tab-padding: 12px 16px;
+$tab-border-radius: $border-radius-md;
+
+// ========================================
+// QUASAR BADGE OVERRIDES
+// ========================================
+
+$badge-border-radius: $border-radius-full;
+$badge-padding: 4px 8px;
+
+// ========================================
+// QUASAR ITEM OVERRIDES
+// ========================================
+
+$item-padding: 12px 16px;
+$item-border-radius: $border-radius-md;
+
+// ========================================
+// QUASAR SEPARATOR OVERRIDES
+// ========================================
+
+$separator-color: #e0e0e0;
+$separator-thickness: 1px;
