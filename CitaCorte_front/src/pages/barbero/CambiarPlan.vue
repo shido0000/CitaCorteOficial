@@ -64,11 +64,28 @@ const solicitar = async (planId) => {
     }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
 .plan-card {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background: $color-blanco;
+    border: 1px solid rgba($color-dorado, 0.2);
+    border-radius: $border-radius-lg;
+    transition: all $transition-base;
+
+    .dark & {
+        background: #2D2D2D;
+        border-color: #404040;
+    }
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: $shadow-md;
+        border-color: rgba($color-dorado, 0.5);
+    }
 }
 
 .flex-grow-1 {

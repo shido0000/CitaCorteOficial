@@ -45,8 +45,16 @@ import { essentialListUrl } from 'src/assets/js/util/essentialListUrl'
 
 </script>
 
-<style>
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
 .navbar-active {
-    background-color: #e5f8f8;
+    background-color: rgba($color-dorado, 0.1) !important;
+    color: $color-dorado !important;
+    border-radius: $border-radius-md;
+    
+    &:hover {
+        background-color: rgba($color-dorado, 0.15) !important;
+    }
 }
 </style>

@@ -167,20 +167,28 @@ const crearReserva = async () => {
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
+.page-container {
+    background: linear-gradient(135deg, $color-negro 0%, $color-gris-oscuro 100%);
+    min-height: 100vh;
+    font-family: $font-family-primary;
+}
+
 .bg-dark {
-    background-color: #1c1c1c;
+    background-color: $color-negro;
 }
 
 .text-white {
-    color: #fff;
+    color: $color-blanco;
 }
 
 .rounded-borders {
-    border-radius: 12px;
+    border-radius: $border-radius-lg;
 }
 
 .shadow-10 {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: $shadow-lg;
 }
 </style>

@@ -167,12 +167,19 @@ const registrar = async () => {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
 .full-height {
-  min-height: 100vh;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, $color-beige-claro 0%, $color-blanco 100%);
+
+    .dark & {
+        background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%);
+    }
 }
 </style>

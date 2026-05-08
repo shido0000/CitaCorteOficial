@@ -261,15 +261,26 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
 .plan-card {
     display: flex;
     flex-direction: column;
     height: 100%;
-    transition: transform 0.2s;
+    transition: transform $transition-base;
+    background: $color-blanco;
+    border: 1px solid rgba($color-dorado, 0.2);
+    border-radius: $border-radius-lg;
+
+    .dark & {
+        background: #2D2D2D;
+        border-color: #404040;
+    }
 
     &:hover {
         transform: translateY(-4px);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: $shadow-md;
+        border-color: rgba($color-dorado, 0.5);
     }
 }
 
