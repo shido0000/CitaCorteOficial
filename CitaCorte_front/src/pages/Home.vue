@@ -89,14 +89,16 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
-/* Colores personalizados */
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
+/* Colores personalizados - Usando variables del design system */
 .bg-black {
-    background-color: #0a0a0a;
+    background-color: $color-negro;
 }
 
 .text-gold {
-    color: #d4af37;
+    color: $color-dorado;
 }
 
 .text-grey-3 {
@@ -112,12 +114,13 @@ onMounted(async () => {
 }
 
 .bg-grey-9 {
-    background-color: #2c2c2c;
+    background-color: $color-gris-oscuro;
 }
 
 /* Contenedor principal con padding lateral */
 .page-container {
-    padding: 24px 5% !important;
+    padding: $spacing-lg 5% !important;
+    font-family: $font-family-primary;
 }
 
 /* Input de búsqueda mejorado */
@@ -125,24 +128,36 @@ onMounted(async () => {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    
+    :deep(.q-field__label) {
+        color: $color-dorado !important;
+    }
+    
+    :deep(.q-field__control input) {
+        color: $color-blanco !important;
+    }
+    
+    :deep(.q-icon) {
+        color: $color-dorado !important;
+    }
 }
 
 /* Estilo para las tarjetas */
 .custom-card {
-    background: linear-gradient(145deg, #1e1e1e 0%, #0f0f0f 100%);
-    border: 1px solid rgba(212, 175, 55, 0.25);
-    border-radius: 20px;
-    transition: all 0.25s ease-in-out;
+    background: linear-gradient(145deg, $color-gris-oscuro 0%, darken($color-negro, 5%) 100%);
+    border: 1px solid rgba($color-dorado, 0.25);
+    border-radius: $border-radius-xl;
+    transition: all $transition-base;
     overflow: hidden;
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.custom-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(212, 175, 55, 0.4);
-    border-color: rgba(212, 175, 55, 0.7);
+    
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba($color-dorado, 0.4);
+        border-color: rgba($color-dorado, 0.7);
+    }
 }
 
 /* Imagen de la tarjeta */
@@ -159,54 +174,62 @@ onMounted(async () => {
 .info-row {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: $spacing-sm;
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: $small-font-size;
     line-height: 1.4;
+    
+    span {
+        color: #e0e0e0;
+    }
 }
 
 /* Ajuste para el componente StarRating */
 :deep(.star-rating) {
-    color: #d4af37;
-    font-size: 1.2rem;
+    color: $color-dorado;
+    font-size: $h3-font-size;
 }
 
 /* Estado vacío */
 .empty-state {
-    padding: 48px 20px;
+    padding: $spacing-xxl $spacing-lg;
     background: rgba(255, 255, 255, 0.02);
-    border-radius: 32px;
+    border-radius: $border-radius-xl;
     backdrop-filter: blur(2px);
+    
+    .q-icon {
+        color: $color-dorado !important;
+    }
 }
 
 /* Responsive */
 @media (max-width: 600px) {
     .page-container {
-        padding: 16px 16px !important;
+        padding: $spacing-md !important;
     }
 
     .text-h5 {
-        font-size: 1.5rem;
+        font-size: $h3-font-size;
         text-align: center;
     }
 
     .custom-card {
-        border-radius: 16px;
+        border-radius: $border-radius-lg;
     }
 
     .info-row {
-        gap: 8px;
+        gap: $spacing-xs;
         font-size: 0.85rem;
     }
 
     :deep(.star-rating) {
-        font-size: 1rem;
+        font-size: $body-font-size;
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .page-container {
-        padding: 24px 4% !important;
+        padding: $spacing-lg 4% !important;
     }
 }
 </style>
