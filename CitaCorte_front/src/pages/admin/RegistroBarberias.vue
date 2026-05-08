@@ -81,3 +81,82 @@ const recargar = async () => {
     barberias.value = data.result
 }
 </script>
+
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
+.q-page {
+    background-color: $color-blanco;
+    min-height: 100vh;
+    padding: $spacing-xl;
+
+    .dark & {
+        background-color: #1A1A1A;
+    }
+}
+
+.text-h6 {
+    font-size: $h2-font-size;
+    font-weight: $font-weight-semibold;
+    color: $color-negro;
+    margin-bottom: $spacing-lg;
+
+    .dark & {
+        color: $color-blanco;
+    }
+}
+
+:deep(.q-table) {
+    background: $color-blanco;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-md;
+
+    .dark & {
+        background: #2D2D2D;
+        box-shadow: none;
+    }
+
+    :deep(.q-table__card) {
+        border-radius: $border-radius-lg;
+    }
+
+    :deep(.q-table__heading) {
+        background-color: rgba($color-dorado, 0.08);
+        color: $color-negro;
+        font-weight: $font-weight-semibold;
+
+        .dark & {
+            background-color: #252525;
+            color: $color-blanco;
+        }
+    }
+
+    :deep(.q-table__row:hover) {
+        background-color: rgba($color-dorado, 0.05);
+    }
+
+    :deep(.q-btn) {
+        margin: 0 $spacing-xs;
+    }
+}
+
+:deep(.q-card) {
+    background: $color-blanco;
+    border-radius: $border-radius-lg;
+    box-shadow: $shadow-md;
+
+    .dark & {
+        background: #2D2D2D;
+    }
+}
+
+:deep(.q-input) {
+    :deep(.q-field__control) {
+        border-radius: $border-radius-md;
+    }
+
+    :deep(.q-field__label) {
+        font-family: $font-family-primary;
+    }
+}
+</style>
