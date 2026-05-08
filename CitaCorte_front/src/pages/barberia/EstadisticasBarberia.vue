@@ -63,7 +63,9 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
 .full-height {
     height: 100%;
 }

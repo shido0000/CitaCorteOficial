@@ -188,6 +188,16 @@ onMounted(async () => {
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+@import 'src/assets/theme/citacorte-design-system.scss';
+
 /* Ajustes adicionales si son necesarios */
+.q-table {
+    background: $color-blanco;
+    border-radius: $border-radius-lg;
+
+    .dark & {
+        background: #2D2D2D;
+    }
+}
 </style>
